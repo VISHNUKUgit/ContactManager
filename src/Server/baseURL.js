@@ -1,1 +1,1 @@
-export const serverURL= "http://localhost:4000";
+export const serverURL= "https://contact-manager-server-25y1.onrender.com";
