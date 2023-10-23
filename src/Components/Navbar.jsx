@@ -89,9 +89,11 @@ import { Link } from 'react-router-dom';
           // logo
           < div className='w-100 d-flex justify-content-center mob' style={{ height: '90px' }} >
             <div className='d-flex justify-content-between align-items-center' style={{ width: "90%" }}>
-              <div className='d-flex align-items-center ' style={{ fontFamily: "Mintaka" }}>
+              <div  style={{ fontFamily: "Mintaka" }}>
+                <Link to={'/'} className='d-flex align-items-center ' >
                 <i class="fa-brands fa-pied-piper-hat fa-2xl " style={lg}></i>
                 <h1 className='text-decoration-underline' style={lg}>Contact-manager</h1>
+                </Link>
               </div>
               <div onClick={handleSlide} className='rounded border d-flex justify-content-center align-items-center hh'>
                 {
@@ -107,7 +109,9 @@ import { Link } from 'react-router-dom';
                 <h1 style={{ textDecoration: 'underline', color: '#fff' }}>Contact-manager</h1>
               </div>
               <ul className='p-4 text-uppercase' style={{ listStyle: 'none', color: '#fff',position:'fixed' }}>
-                <li className='p-4 border-bottom' style={{ cursor: 'pointer',color:'blue' }}>User</li>
+                <Link to={'/'} className='text-decoration-none'>
+                <li className='p-4 border-bottom' style={{ cursor: 'pointer',color:'blue' }}>Home</li>
+                </Link>
                 <Link to={'/all-contact'} style={{color:'#fff',cursor: 'pointer'}} className='text-decoration-none' >
                   <li className='p-4 border-bottom'>All-contact</li>
                 </Link>
