@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { useState, useEffect } from 'react'
+import img1 from '../img/img1.jpg';
+
 function Home() {
     const [screenSize, setScreenSize] = useState(window.innerWidth)
     useEffect(() => {
@@ -35,7 +37,7 @@ function Home() {
             <div className='w-100 position-fixed' style={{ backdropFilter: 'sepia(10%)' }}>
                 <Navbar />
             </div>
-            <div className='w-100' style={{ backgroundImage: `url('https://www.truecaller.com/cms/5efa0e0fa489312c345ff594bc41182a.avif')`, height: '600px', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+            <div className='w-100' style={{ backgroundImage:`url(${img1})`, height: '600px', backgroundPosition: 'center', backgroundSize: 'cover' }}>
                 <div style={divStyle}>
                     <h1 style={{
                         color: '#fff'
